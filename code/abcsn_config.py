@@ -1,37 +1,5 @@
 import numpy as np
 
-FILT = True
-FILT = False
-SNIDIFIED = False
-SNIDIFIED = True
-
-default_hyper_parameters = {
-    "phase_range": (-20, 50),
-    "ptp_range": (0.1, 100),
-    "wvl_range": (4500, 7000),
-    "train_frac": 0.50,
-    "noise_scale": 0.25,
-    "spike_scale": 3,
-    "max_spikes": 5,
-    "random_state": 1415,
-
-    "lr0": 0.001,
-    "lr_schedule": "constant_lr",
-
-    "num_transformer_blocks": 6,
-    "num_heads": 8,
-    "key_dim": 64,
-    "kr_l2": 0,
-    "br_l2": 0,
-    "ar_l2": 0,
-    "dropout_attention": 0.1,
-    "dropout_projection": 0.1,
-    "filters": 4,
-    "num_feed_forward_layers": 1,
-    "feed_forward_layer_size": 1024,
-    "dropout_feed_forward": 0.1,
-}
-
 
 def determine_ID_Stype_to_Mtype(SN_Stype_ID: int):
     """
