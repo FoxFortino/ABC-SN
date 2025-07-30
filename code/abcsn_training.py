@@ -333,8 +333,8 @@ def make_model(
 
 def load_data():
     # Load pre-prepared data.
-    df_trn = pd.read_parquet("/home/2649/repos/SCS/data/R100/df_SPAR_trn.parquet")
-    df_tst = pd.read_parquet("/home/2649/repos/SCS/data/R100/df_SPR_tst.parquet")
+    df_trn = pd.read_parquet("../data/resolution_100_parquet/df_SPAR_trn.parquet")
+    df_tst = pd.read_parquet("../data/resolution_100_parquet/df_SPR_tst.parquet")
 
     # df_trn = pd.read_parquet("/home/2649/repos/SCS/data/R100/df_PAR_trn.parquet")
     # df_tst = pd.read_parquet("/home/2649/repos/SCS/data/R100/df_PR_tst.parquet")
