@@ -1,6 +1,6 @@
 # ABC-SN Model Files
 
-The `.keras` model file for the final trained model is too large to be hosted on GitHub. Find it on Zenodo [here]([url](https://zenodo.org/records/16620817)). When you download it from Zenodo yourself, place it in this directory and ensure it is named `ABCSN.keras`.
+The `.keras` model file for the final trained model is too large to be hosted on GitHub. Find it on Zenodo [here](https://zenodo.org/records/16620817). When you download it from Zenodo yourself, place it in this directory and ensure it is named `ABCSN.keras`.
 
 `ABCSN_pretrain.keras` — The model used to pretrain the weights in the transformer encoder layers of ABC-SN.
 
