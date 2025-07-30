@@ -3,19 +3,19 @@
 This folder contains all data related to the training of ABC-SN.
 
 ```
-Data
-├─── original_lnw_files
+data/
+├─── original_lnw_files/
 │    ├─── from_DASH
 │    │    └─── lnw files...
 │    └─── from_Liu_Modjaz
 │         └─── lnw files...
-├─── original_resolution_parquet
+├─── original_resolution_parquet/
 │    ├─── original_data.parquet  # All lnw files collated into one DataFrame. lnw_to_parquet.py creates this file.
 │    ├─── df_preprocessed.parquet
 │    ├─── df_P_tst.parquet
 │    ├─── df_P_trn.parquet
 │    └─── df_PA_trn.parquet
-├─── resolution_100_parquet
+├─── resolution_100_parquet/
 │    ├─── df_PR_tst.parquet
 │    ├─── df_SPR_tst.parquet *
 │    ├─── df_PAR_trn.parquet
