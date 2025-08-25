@@ -63,8 +63,8 @@ def preprocessing(
 
     print(f"Lowering spectral resolution of testing set spectra to R = {R}...")
     df_PC_tst, df_PR_tst = dg.degrade_dataframe(R, df_P_tst)
-    df_PC_tst.to_parquet(join(save_dir_R100, "df_PC_tst.parquet")
-    df_PR_tst.to_parquet(join(save_dir_R100, "df_PR_tst.parquet")
+    df_PC_tst.to_parquet(join(save_dir_R100, "df_PC_tst.parquet"))
+    df_PR_tst.to_parquet(join(save_dir_R100, "df_PR_tst.parquet"))
     print(f"Shape of `df_PC_tst`: {df_PC_tst.shape}")
     print(f"Shape of `df_PR_tst`: {df_PR_tst.shape}")
     print(f"The 'C' in 'df_PC_tst' denotes that these spectra are defined on the same wavelengths as the original spectra.")
