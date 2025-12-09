@@ -28,6 +28,7 @@ You can find the model weights for ABC-SN (a.k.a the trained model) on [Zenodo](
 
 Fortino, Willow, Federica Bettina Bianco, Pavlos Protopapas, Daniel Muthukrishna, and Austin Jay Brockmeier. “The Model for "ABC-SN: Attention Based Classifier for Supernova"”. Zenodo, July 30, 2025. https://doi.org/10.5281/zenodo.16620817.
 
+```
 @misc{fortino_2025_16620817,
   author       = {Fortino, Willow and
                   Bianco, Federica Bettina and
@@ -43,3 +44,4 @@ Fortino, Willow, Federica Bettina Bianco, Pavlos Protopapas, Daniel Muthukrishna
   doi          = {10.5281/zenodo.16620817},
   url          = {https://doi.org/10.5281/zenodo.16620817},
 }
+```
