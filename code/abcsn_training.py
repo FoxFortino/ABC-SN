@@ -11,7 +11,7 @@ from scipy import stats
 
 import tensorflow as tf
 import keras
-import keras_nlp
+import keras_hub
 
 from keras.layers import Dense
 from keras.layers import ReLU
@@ -37,8 +37,8 @@ from keras.callbacks import EarlyStopping
 from keras.callbacks import ReduceLROnPlateau
 from keras.callbacks import ModelCheckpoint
 
-from keras_nlp.layers import SinePositionEncoding
-from keras_nlp.layers import TransformerEncoder
+from keras_hub.layers import SinePositionEncoding
+from keras_hub.layers import TransformerEncoder
 
 # My packages
 import abcsn_config
