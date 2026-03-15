@@ -7,6 +7,8 @@ from scipy import stats
 import data_preparation as dp
 import data_degrading as dg
 
+from icecream import ic
+
 rng = np.random.RandomState(1415)
 
 
@@ -20,6 +22,7 @@ def preprocessing(
     wvl_range=(4500, 7000),
     train_frac=0.50,
     rng=rng,
+    CV=False,
 ):
     """
     All preprocessing steps for ABC-SN.
@@ -41,7 +44,10 @@ def preprocessing(
 
     print(f"Performing the train-test split on the preprocessed dataset.")
     print(f"    Fraction of the supernovae to be in the training set: {train_frac}.")
-    df_P_trn, df_P_tst = split_data(df_prep, train_frac, rng)    
+    if CV:
+        df_P_tst, df_P_trn = split_data(df_prep, train_frac, rng)
+    else:
+        df_P_trn, df_P_tst = split_data(df_prep, train_frac, rng)
     df_P_trn.to_parquet(join(save_dir_original_R, "df_P_trn.parquet"))
     df_P_tst.to_parquet(join(save_dir_original_R, "df_P_tst.parquet"))
     print(f"Shape of `df_P_trn`: {df_P_trn.shape}")
@@ -50,7 +56,7 @@ def preprocessing(
     print(f"Performing data augmentation on the preprocessed training set.")
     df_PA_trn = augment(df_P_trn, wvl_range)
     df_PA_trn.to_parquet(join(save_dir_original_R, "df_PA_trn.parquet"))
-    print(f"Shape of `df_PA_trn`: {df_PA_tst.shape}")
+    print(f"Shape of `df_PA_trn`: {df_PA_trn.shape}")
 
     print(f"Lowering spectral resolution of training set spectra to R = {R}...")
     df_PAC_trn, df_PAR_trn = dg.degrade_dataframe(R, df_PA_trn)
