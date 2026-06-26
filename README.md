@@ -15,12 +15,26 @@ If you use our work, please cite our paper:
 
 Fortino, Willow Fox, Federica B. Bianco, Pavlos Protopapas, Daniel Muthukrishna, and Austin Brockmeier. "ABC-SN: Attention Based Classifier for Supernova Spectra." arXiv preprint arXiv:2507.22106 (2025).
 
-```@article{fortino2025abc,
-  title={ABC-SN: Attention Based Classifier for Supernova Spectra},
-  author={Fortino, Willow Fox and Bianco, Federica B and Protopapas, Pavlos and Muthukrishna, Daniel and Brockmeier, Austin},
-  journal={arXiv preprint arXiv:2507.22106},
-  year={2025}
+```@ARTICLE{2026ApJ..1000...14F,
+       author = {{Fortino}, Willow Fox and {Bianco}, Federica B. and {Protopapas}, Pavlos and {Muthukrishna}, Daniel and {Brockmeier}, Austin},
+        title = "{ABC-SN: Attention-based Classifier for Supernova Spectra}",
+      journal = {\apj},
+     keywords = {Supernovae, Classification, Astrostatistics techniques, Astrostatistics, Neural networks, Astronomy data analysis, Spectroscopy, Computational astronomy, Astronomical methods, 1668, 1907, 1886, 1882, 1933, 1858, 1558, 293, 1043, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics},
+         year = 2026,
+        month = mar,
+       volume = {1000},
+       number = {1},
+          eid = {14},
+        pages = {14},
+          doi = {10.3847/1538-4357/ae3b41},
+archivePrefix = {arXiv},
+       eprint = {2507.22106},
+ primaryClass = {astro-ph.IM},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2026ApJ..1000...14F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+
 ```
 
 # Model Citation
